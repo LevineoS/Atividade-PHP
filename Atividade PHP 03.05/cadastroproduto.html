@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="./css/cadastro.css">
+        <script src="./js/cadastro.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
+
+        <title>Tela de Cadastro</title>
+
+    </head>
+    <body>
+        <header>
+
+            <h1> Joguetes </h1>
+            <nav>
+                <ul>
+                    <li> <a href = "home.html"> Início </a> </li>
+                    <li> <a href = "jogos.html"> Jogos </a> </li>
+                    <li> <a href = "contato.html"> Contato </a> </li>
+                    <li> <a href = "cadastro.html"> Cadastro </a> </li>
+                    <li> <a href = "index.html"> Login </a> </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="container-principal">
+            <div class="formulario">
+                <form id="form-cadastro" action = "./php/cadastro-produto.php">
+
+                    <h3> Cadastro de Jogos </h3>
+
+                    <input type="text" name="Nome" placeholder="Nome do Jogo:" id="nome"  required="true" minlength="3" maxlength="80">
+
+                    <input type="text" placeholder="Marca:" id="marca" required="true" minlength="14" maxlength="255"/> 
+
+                    <input type="number" placeholder="Preço:" id="preco" required="true" minlength="3" maxlength="15"/>
+
+                    <input type="text" placeholder="Descrição:" id="descricao" required="true" minlength="4" maxlength="100"/>  
+
+                    <input type="submit" value="Cadastrar Produto">
+
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Joguetes. Todos os direitos reservados. </p>
+        </footer>
+        
+    </body>
+</html>
